@@ -5,7 +5,7 @@ function getRandomInt(min, max) {
 
 var Generator = function() {
 
-  var words = require('./en/nouns.json').words;
+  var words = require('./words/en/nouns.json').words;
 
   var random = getRandomInt(0, words.length - 1);
 
