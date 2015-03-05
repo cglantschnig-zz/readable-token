@@ -1,0 +1,26 @@
+{
+  "name": "readable-token",
+  "version": "0.0.1",
+  "description": "creates readable tokens, which are easy to remember",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Safari92/readable-token.git"
+  },
+  "keywords": [
+    "readable",
+    "javascript",
+    "token",
+    "english",
+    "german"
+  ],
+  "author": "Christopher Glantschnig <christopher.glantschnig@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Safari92/readable-token/issues"
+  },
+  "homepage": "https://github.com/Safari92/readable-token"
+}
