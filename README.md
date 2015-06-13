@@ -20,6 +20,7 @@ readableToken(); // good-rabbit-33
 ### Api
 ## Constructor
 It accepts an option object as first parameter.
+
     readableToken({
         addition: 'nouns' // nouns or animals; defaults to animals
     });
