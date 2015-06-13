@@ -7,25 +7,35 @@ function getRandomInt(min, max) {
 }
 
 /**
+ * returns a random string from a given array of strings
+ * @returns string
+ */
+function getRandomWord(list) {
+  if (!list.length) throw new Error('A list of strings is required!');
+  var random_number = getRandomInt(0, list.length - 1);
+  return list[random_number];
+}
+
+/**
  * returns a random word from the choosen list
  */
-var Generator = function(language, list) {
-  if (!language) language = 'en';
-  if (!list) list = 'nouns';
+var generateToken = function(options) {
+  var language = options.language || 'en';
+  var addition = options.addition || 'animals';
+
+  var adjectives = require('./words/en/adjectives.json');
 
   var words = [];
   try {
-    words = require('./words/' + language + '/' + list + '.json').words;
+    words = require('./words/' + language + '/' + addition + '.json');
   }
   catch(e) {
     throw new Error('Could not find a word list with the given parameters!');
   }
 
-  var random = getRandomInt(0, words.length - 1);
-
-  return words[random] + getRandomInt(1, 100);
+  return getRandomWord(adjectives) + '-' + getRandomWord(words) + '-' + getRandomInt(1, 100);
 
 };
 
 
-module.exports = Generator;
+module.exports = generateToken;
