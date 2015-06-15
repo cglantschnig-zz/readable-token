@@ -20,6 +20,7 @@ function getRandomWord(list) {
  * returns a random word from the choosen list
  */
 var generateToken = function(options) {
+  options = options || {};
   var language = options.language || 'en';
   var addition = options.addition || 'animals';
 
