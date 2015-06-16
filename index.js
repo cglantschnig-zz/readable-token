@@ -22,9 +22,9 @@ function getRandomWord(list) {
 var generateToken = function(options) {
   options = options || {};
   var language = options.language || 'en';
-  var addition = options.addition || 'animals';
+  var addition = options.addition || 'weekdays';
 
-  var adjectives = require('./words/en/adjectives.json');
+  var adjectives = require('./words/en/adjectives2.json');
 
   var words = [];
   try {
