@@ -2,13 +2,13 @@
   "name": "readable-token",
   "version": "0.1.0",
   "description": "creates readable tokens, which are easy to remember",
-  "main": "index.js",
+  "main": "./src/readableToken.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Safari92/readable-token.git"
+    "url": "https://github.com/cglantschnig/readable-token.git"
   },
   "keywords": [
     "readable",
@@ -20,7 +20,14 @@
   "author": "Christopher Glantschnig <christopher.glantschnig@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Safari92/readable-token/issues"
+    "url": "https://github.com/cglantschnig/readable-token/issues"
   },
-  "homepage": "https://github.com/Safari92/readable-token"
+  "homepage": "https://github.com/cglantschnig/readable-token",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  }
 }
