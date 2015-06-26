@@ -1,6 +1,6 @@
 {
   "name": "readable-token",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "creates readable tokens, which are easy to remember",
   "main": "./src/readableToken.js",
   "scripts": {
