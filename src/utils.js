@@ -27,6 +27,7 @@ function getRandomWord(list) {
  * @returns Array
  */
 function getDirectories(srcpath) {
+  srcpath = path.join(__dirname, srcpath);
   return fs.readdirSync(srcpath)
     .filter(function(file) {
       return fs.statSync(path.join(srcpath, file)).isDirectory();
@@ -39,6 +40,7 @@ function getDirectories(srcpath) {
  * @returns {Array}
  */
 function getFilesWithoutExtension(srcpath) {
+  srcpath = path.join(__dirname, srcpath);
   return fs.readdirSync(srcpath)
     .filter(function(file) {
       return fs.statSync(path.join(srcpath, file)).isFile();

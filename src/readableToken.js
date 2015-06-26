@@ -8,8 +8,8 @@ var utils = require('./utils');
 var generateToken = function(options) {
   options = options || {};
 
-  var language = utils.getDirectories('./src/words').indexOf(options.language) > -1 ? options.language : 'en';
-  var addition = utils.getFilesWithoutExtension('./src/words/' + language).indexOf(options.addition) > -1 ? options.addition : 'weekdays';
+  var language = utils.getDirectories('words').indexOf(options.language) > -1 ? options.language : 'en';
+  var addition = utils.getFilesWithoutExtension('words/' + language).indexOf(options.addition) > -1 ? options.addition : 'weekdays';
 
   var adjectives = require('./words/en/adjectives2.json');
 
